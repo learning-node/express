@@ -3,7 +3,10 @@ const app = express();
 const PORT = 3000;
 const request = require('request');
 const bodyParser = require('body-parser');
+const apiUrl = 'http://www.google.com';
 
+// What happens (or doesn't happen) if the following
+// two lines are not there?
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
